@@ -1,6 +1,7 @@
 package api.test;
 
 import com.alibaba.fastjson.JSON;
+import domain.ai.IOpenAI;
 import domain.zsxq.IZsxqApi;
 import domain.zsxq.model.aggregates.UnAnsweredQuestionsAggregates;
 import domain.zsxq.model.vo.Topics;
@@ -37,6 +38,9 @@ public class SpringBootRunTest {
     @Resource
     private IZsxqApi zsxqApi;
 
+    @Resource
+    private IOpenAI openAI;
+
     @Test
     public void test_zxsqApi() throws IOException {
         UnAnsweredQuestionsAggregates unAnsweredQuestionsAggregates = zsxqApi.queryUnAnswerQuestionsTopicId(groupId, cookie);
@@ -51,5 +55,11 @@ public class SpringBootRunTest {
             // 回答问题
             //zsxqApi.answer(groupId,cookie,topicId,text,false);
         }
+    }
+
+    @Test
+    public void test_openAi() throws IOException {
+        String response = openAI.doChatGPT("帮我写一个冒泡排序");
+        logger.info("测试结果：{}",response);
     }
 }
