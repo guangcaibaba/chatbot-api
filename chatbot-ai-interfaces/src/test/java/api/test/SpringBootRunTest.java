@@ -53,7 +53,7 @@ public class SpringBootRunTest {
             // 获取问题id，问题
             logger.info("topicId:{} text:{}",topicId,text);
             // 回答问题
-            //zsxqApi.answer(groupId,cookie,topicId,text,false);
+            zsxqApi.answer(groupId,cookie,topicId,text,false);
         }
     }
 
