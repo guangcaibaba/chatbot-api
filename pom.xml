@@ -14,6 +14,7 @@
         <module>chatbot-ai-application</module>
         <module>chatbot-ai-interfaces</module>
         <module>chatbot-ai-infrastructure</module>
+        <module>chatbot-ai-common</module>
     </modules>
 
     <properties>

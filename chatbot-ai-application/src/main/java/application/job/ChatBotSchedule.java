@@ -23,7 +23,7 @@ import java.util.Random;
  * @Project：chatbot-ai
  * @name：ChatBotSchedule
  * @Date：2023/5/4 21:09
- * @description：
+ * @description：任务体（优化前）
  */
 @EnableScheduling
 @Configuration

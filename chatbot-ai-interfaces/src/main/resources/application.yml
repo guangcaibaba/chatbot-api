@@ -2,6 +2,16 @@ server:
   port: 8090
 
 chatbot-ai:
-  groupId: 28885518425541
-  cookie: zsxq_access_token=C6162F14-290E-1EE7-3A79-43D1385F5E2C_B132ADDADB432A5E; abtest_env=product; zsxqsessionid=188f6353565e506df081db396f00bb44; UM_distinctid=187e4a896e2829-0bb3a13f1fa78d-7e57547f-384000-187e4a896e3eb3; sajssdk_2015_cross_new_user=1; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%22212528855282221%22%2C%22first_id%22%3A%22187e4a898f3d8c-0947914ffee053-7e57547f-3686400-187e4a898f4117d%22%2C%22props%22%3A%7B%7D%2C%22identities%22%3A%22eyIkaWRlbnRpdHlfY29va2llX2lkIjoiMTg3ZTRhODk4ZjNkOGMtMDk0NzkxNGZmZWUwNTMtN2U1NzU0N2YtMzY4NjQwMC0xODdlNGE4OThmNDExN2QiLCIkaWRlbnRpdHlfbG9naW5faWQiOiIyMTI1Mjg4NTUyODIyMjEifQ%3D%3D%22%2C%22history_login_id%22%3A%7B%22name%22%3A%22%24identity_login_id%22%2C%22value%22%3A%22212528855282221%22%7D%2C%22%24device_id%22%3A%22187e4a898f3d8c-0947914ffee053-7e57547f-3686400-187e4a898f4117d%22%7D
-  openAiKey: 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
+  launchList: group01,group02 #启动几组，就配置几组
+  group01:
+    groupName: ChatGPT AI 问答助手
+    groupId: 28885518425541
+    cookie: zsxq_access_token=C6162F14-290E-1EE7-3A79-43D1385F5E2C_B132ADDADB432A5E; abtest_env=product; zsxqsessionid=188f6353565e506df081db396f00bb44; UM_distinctid=187e4a896e2829-0bb3a13f1fa78d-7e57547f-384000-187e4a896e3eb3; sajssdk_2015_cross_new_user=1; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%22212528855282221%22%2C%22first_id%22%3A%22187e4a898f3d8c-0947914ffee053-7e57547f-3686400-187e4a898f4117d%22%2C%22props%22%3A%7B%7D%2C%22identities%22%3A%22eyIkaWRlbnRpdHlfY29va2llX2lkIjoiMTg3ZTRhODk4ZjNkOGMtMDk0NzkxNGZmZWUwNTMtN2U1NzU0N2YtMzY4NjQwMC0xODdlNGE4OThmNDExN2QiLCIkaWRlbnRpdHlfbG9naW5faWQiOiIyMTI1Mjg4NTUyODIyMjEifQ%3D%3D%22%2C%22history_login_id%22%3A%7B%22name%22%3A%22%24identity_login_id%22%2C%22value%22%3A%22212528855282221%22%7D%2C%22%24device_id%22%3A%22187e4a898f3d8c-0947914ffee053-7e57547f-3686400-187e4a898f4117d%22%7D
+    openAiKey: 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
+    cronExpression: 0/30 * * * * ? # 执行的频次配置
+  group02:
+    groupName: ChatGPT AI 人工智能
+    groupId: 28885518425541
+    cookie: zsxq_access_token=C6162F14-290E-1EE7-3A79-43D1385F5E2C_B132ADDADB432A5E; abtest_env=product; zsxqsessionid=188f6353565e506df081db396f00bb44; UM_distinctid=187e4a896e2829-0bb3a13f1fa78d-7e57547f-384000-187e4a896e3eb3; sajssdk_2015_cross_new_user=1; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%22212528855282221%22%2C%22first_id%22%3A%22187e4a898f3d8c-0947914ffee053-7e57547f-3686400-187e4a898f4117d%22%2C%22props%22%3A%7B%7D%2C%22identities%22%3A%22eyIkaWRlbnRpdHlfY29va2llX2lkIjoiMTg3ZTRhODk4ZjNkOGMtMDk0NzkxNGZmZWUwNTMtN2U1NzU0N2YtMzY4NjQwMC0xODdlNGE4OThmNDExN2QiLCIkaWRlbnRpdHlfbG9naW5faWQiOiIyMTI1Mjg4NTUyODIyMjEifQ%3D%3D%22%2C%22history_login_id%22%3A%7B%22name%22%3A%22%24identity_login_id%22%2C%22value%22%3A%22212528855282221%22%7D%2C%22%24device_id%22%3A%22187e4a898f3d8c-0947914ffee053-7e57547f-3686400-187e4a898f4117d%22%7D
+    openAiKey: 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
+    cronExpression: 0/30 * * * * ?
