@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "chatbot-ai.groupId",
+      "type": "java.lang.String",
+      "description": "Description for chatbot-ai.groupId."
+  }
+] }

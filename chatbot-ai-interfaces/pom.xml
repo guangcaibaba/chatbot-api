@@ -75,6 +75,12 @@
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
         </dependency>
+        <!-- 工程中的依赖信息 -->
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>chatbot-ai-domain</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 </project>

@@ -1,4 +1,4 @@
-package apiTest;
+package api.test;
 
 
 import org.apache.http.HttpStatus;
